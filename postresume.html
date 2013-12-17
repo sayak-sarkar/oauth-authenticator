@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Title -->
+    <title id="title">Post Resume!</title>
+
+    <!-- App Specific CSS -->
+    <link rel="stylesheet" href="stylesheets/oauth.css"> 
+
+    <!-- Minified Underscore JS-->
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+
+    <!-- App Specific JS-->
+    <script src="scripts/oauth.js"></script>
+
+  </head>
+
+  <body>
+      <form name="postResume" id="postResume" action="http://join.agiliq.com/api/resume/upload/?access_token=WlZuU7ZGVJm9ulh1ZZLo2hCnGVeXCKOgZjqPDlXVYVQ0627dUh" method="POST" enctype="multipart/form-data">
+        First Name: <input type="text" name="first_name" /><br/>
+        Last Name: <input type="text" name="last_name" /><br/>
+        Projects URL: <input type="text" name="projects_url" /><br/>
+        Code URL: <input type="text" name="code_url" /><br/>
+        Resume: <input type="file" name="resume" /><br/>
+        <input type="submit">
+      </form>
+  </body>
+</html>
