@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <!-- Meta Data -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Title -->
+    <title id="title">OAuth Authenticator!</title>
+
+    <!-- App Specific CSS -->
+    <link rel="stylesheet" href="stylesheets/oauth.css"> 
+
+    <!-- Minified Underscore JS-->
+    <script src="scripts/jquery-1.10.2.min.js"></script>
+
+    <!-- App Specific JS-->
+    <script src="scripts/oauth.js"></script>
+
+  </head>
+
+  <body>
+    <div id="page1" class="unhidden">
+      <form name="getAuthCode" id="getAuthCode" action="http://join.agiliq.com/oauth/app_authorize/">
+        Redirect URI: <input type="text" name="redirect_uri" /><br/>
+        Client ID: <input type="text" name="client_id" /><br/>
+        <input type="submit" value="Get Authorization Code">
+      </form>
+    </div>
+    <div id="page2" class="hidden">
+      <form name="getAccessToken" id="getAccessToken" method="POST" action="http://join.agiliq.com/oauth/access_token/">
+        Client ID: <input type="text" name="client_id" /><br/>
+        Client Secret: <input type="text" name="client_secret" /><br/>
+        Authorization Code <input type="text" name="code" id="code" /><br/>
+        Redirect URI: <input type="text" name="redirect_uri" /><br/>
+        <input type="submit" value="Get Access Token">
+      </form>
+    </div>
+  </body>
+</html>
