@@ -1,9 +1,88 @@
-/*Classes*/
+@charset "utf-8";
+
+/**
+ * Stylesheet Index:
+ * =================
+ *
+ * 0. Reset
+ * 1. Imports
+ * 2. Elements
+ * 3. IDs
+ * 4. Classes
+ * 5. Media Queries
+**/
+
+/* 0. Reset */
+
+::selection { background: rgba(0, 0, 0, 0.1); }
+::-moz-selection { background: rgba(0, 0, 0, 0.1); }
+
+body {
+	font-family:			Verdana, Georgia, Helvetica,	/* Desktop	*/
+							"Droid Sans", "Helvetica Neue",	/* Mobile	*/
+							Sans-serif;			/* Fallback	*/
+	margin:					0;
+	min-width:				320px;
+	padding:				0;
+	width:					100%;
+}
+
+a {
+	outline:				0;
+	text-decoration:		none;
+}
+
+hr {
+	border:					1px solid;
+	border-color:			#aaa transparent #fff;
+	clear:					both;
+}
+
+/* 1. Imports */
+
+
+/* 2. Elements */
+
+body {
+	background-color:		#ccc;
+	background-attachment:	fixed;
+	color:					#333;
+}
+
+body > * {
+	margin:					auto;
+	text-align:				center;
+	width:					800px;
+}
+
+h1 {
+	padding-top:			8%;
+}
+
+ /* 3. IDs */
+#fileUploader	{
+	margin-right: 			-65px;
+}
+
+#formsContainer	{
+	margin-right: 			40%;
+	text-align: 			right;
+}
+
+#pageLink	{
+	text-align: 			right;
+}
+
+/* 4. Classes*/
 .hidden { 
-	visibility: hidden; 
-	display: none;
+	visibility: 			hidden; 
+	display: 				none;
 }
 .unhidden {
-	visibility: visible; 
-	display: block;
+	visibility: 			visible; 
+	display: 				block;
+}
+.submitButton	{
+	margin-right: 			2.5%;
+	width:                  180px;
 }

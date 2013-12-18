@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Title -->
-    <title id="title">Post Resume!</title>
+    <title id="title">Resume Uploader System</title>
 
     <!-- App Specific CSS -->
     <link rel="stylesheet" href="stylesheets/oauth.css"> 
@@ -21,13 +21,23 @@
   </head>
 
   <body>
+    <h1>Resume Uploader System for Agiliq</h1><br/>
+    <hr/>
+    <br/>
+    <div id="formsContainer">
       <form name="postResume" id="postResume" action="http://join.agiliq.com/api/resume/upload/?access_token=WlZuU7ZGVJm9ulh1ZZLo2hCnGVeXCKOgZjqPDlXVYVQ0627dUh" method="POST" enctype="multipart/form-data">
         First Name: <input type="text" name="first_name" /><br/>
         Last Name: <input type="text" name="last_name" /><br/>
         Projects URL: <input type="text" name="projects_url" /><br/>
-        Code URL: <input type="text" name="code_url" /><br/>
-        Resume: <input type="file" name="resume" /><br/>
-        <input type="submit">
+        Code URL: <input type="text" name="code_url" /><br/><br/>
+        <span id="fileUploader">Resume: <input type="file" name="resume" /></span><br/><br/>
+        <input type="submit"><br/>
       </form>
+    </div>
+    <br/>
+    <hr/>
+    <div id="pageLink">
+      <a href="index.html">OAuth Authentication System.</a>
+    </div> 
   </body>
 </html>

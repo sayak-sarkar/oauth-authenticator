@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width">
 
     <!-- Title -->
-    <title id="title">OAuth Authenticator!</title>
+    <title id="title">OAuth Authentication System</title>
 
     <!-- App Specific CSS -->
     <link rel="stylesheet" href="stylesheets/oauth.css"> 
@@ -21,21 +21,31 @@
   </head>
 
   <body>
-    <div id="page1" class="unhidden">
-      <form name="getAuthCode" id="getAuthCode" action="http://join.agiliq.com/oauth/app_authorize/">
-        Redirect URI: <input type="text" name="redirect_uri" /><br/>
-        Client ID: <input type="text" name="client_id" /><br/>
-        <input type="submit" value="Get Authorization Code">
-      </form>
+    <h1>OAuth Authentication System for Agiliq</h1><br/>
+    <hr/><br/>
+    <div id="formsContainer">
+      <div id="stage1" class="unhidden">
+        <form name="getAuthCode" id="getAuthCode" action="http://join.agiliq.com/oauth/app_authorize/">
+          <label>Redirect URI:</label> <input type="text" name="redirect_uri" /><br/>
+          <label>Client ID:</label> <input type="text" name="client_id" /><br/><br/>
+          <input type="submit" class="submitButton" value="Get Authorization Code"><br/>
+        </form>
+      </div>
+      <div id="stage2" class="hidden">
+        <form name="getAccessToken" id="getAccessToken" method="POST" action="http://join.agiliq.com/oauth/access_token/">
+          </label>Client ID:</label> <input type="text" name="client_id" /><br/>
+          </label>Client Secret:</label> <input type="text" name="client_secret" /><br/>
+          </label>Authorization Code:</label> <input type="text" name="code" id="code" /><br/>
+          </label>Redirect URI:</label> <input type="text" name="redirect_uri" /><br/><br/>
+          <input type="submit" class="submitButton" value="Get Access Token"><br/>
+        </form>
+      </div>
     </div>
-    <div id="page2" class="hidden">
-      <form name="getAccessToken" id="getAccessToken" method="POST" action="http://join.agiliq.com/oauth/access_token/">
-        Client ID: <input type="text" name="client_id" /><br/>
-        Client Secret: <input type="text" name="client_secret" /><br/>
-        Authorization Code <input type="text" name="code" id="code" /><br/>
-        Redirect URI: <input type="text" name="redirect_uri" /><br/>
-        <input type="submit" value="Get Access Token">
-      </form>
-    </div>
+    <br/>
+    <hr/>
+    <br/>
+    <div id="pageLink">
+      <a href="postresume.html">Resume Uploader System.</a>
+    </div>  
   </body>
 </html>

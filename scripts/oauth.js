@@ -9,8 +9,8 @@ function getUrlVars() {
 $(document).ready(function(){
 	var code = getUrlVars()["code"];
 	if (code) {
-		document.getElementById("page1").className='hidden';
-		document.getElementById("page2").className='unhidden';
+		document.getElementById("stage1").className='hidden';
+		document.getElementById("stage2").className='unhidden';
 		document.getElementById("code").value=code;
 	}
 });
