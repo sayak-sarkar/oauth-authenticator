@@ -125,12 +125,12 @@ h1 {
 
 @media (max-width: 341px) {
     #fileUploader	{
-		margin-left:		-11px;
+		margin-left:		-12px;
 		text-align: 		left;
 	}
 }
 
-@media (max-width: 320px) {
+@media (max-width: 319px) {
 	body	{
 		text-align: 		center;		
 	}
