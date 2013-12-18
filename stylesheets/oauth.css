@@ -124,6 +124,11 @@ h1 {
 
 
 @media (max-width: 341px) {
+	#formsContainer	{
+	   padding-left:        20px;
+	   margin:              auto;
+	   text-align: 			center;
+    }
     #fileUploader	{
 		margin-left:		-12px;
 		text-align: 		left;
