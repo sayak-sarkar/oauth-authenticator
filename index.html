@@ -28,16 +28,16 @@
         <form name="getAuthCode" id="getAuthCode" action="http://join.agiliq.com/oauth/app_authorize/">
           <span id="redirectUrl"><label>Redirect URI:</label> <input type="text" name="redirect_uri" /></span><br/>
           <span id="clientID"><label>Client ID:</label> <input type="text" name="client_id" /></span><br/><br/>
-          <input type="submit" class="submitButton" value="Get Authorization Code"><br/>
+          <input type="submit" value="Get Authorization Code"><br/>
         </form>
       </div>
       <div id="stage2" class="hidden">
         <form name="getAccessToken" id="getAccessToken" method="POST" action="http://join.agiliq.com/oauth/access_token/">
           </label>Client ID:</label> <input type="text" name="client_id" /><br/>
-          </label>Client Secret:</label> <input type="text" name="client_secret" /><br/>
-          </label>Authorization Code:</label> <input type="text" name="code" id="code" /><br/>
-          </label>Redirect URI:</label> <input type="text" name="redirect_uri" /><br/><br/>
-          <input type="submit" class="submitButton" value="Get Access Token"><br/>
+          <span id="clientSecret"><label>Client Secret:</label> <input type="text" name="client_secret" /></span><br/>
+          <span id="authCode"><label>Auth Code:</label> <input type="text" name="code" id="code" /></span><br/>
+          <span id="redirectUri"><label>Redirect URI:</label> <input type="text" name="redirect_uri" /></span><br/><br/>
+          <input type="submit" value="Get Access Token"><br/>
         </form>
       </div>
     </div>
