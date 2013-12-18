@@ -47,16 +47,13 @@ body {
 	background-color:		#ccc;
 	background-attachment:	fixed;
 	color:					#333;
-}
-
-body > * {
-	margin:					auto;
-	text-align:				center;
-	width:					800px;
+	margin:                 auto;
+	text-align:             center;
 }
 
 h1 {
-	padding-top:			8%;
+	padding-top:			5%;
+	margin-bottom:         -1%;
 }
 
  /* 3. IDs */
@@ -78,11 +75,40 @@ h1 {
 	visibility: 			hidden; 
 	display: 				none;
 }
+
 .unhidden {
 	visibility: 			visible; 
 	display: 				block;
 }
+
 .submitButton	{
 	margin-right: 			2.5%;
 	width:                  180px;
+}
+
+/* 5. Media Queries*/
+@media (max-width: 800px) {
+	body	{
+		text-align: 		center;			
+	}
+	h1		{
+		margin-bottom: 		-10px;
+	}
+	#clientID		{
+		margin-left: 		10px;
+	}
+    #fileUploader	{
+		margin-left:		-40px;
+		text-align: 		left;
+	}
+	#formsContainer	{
+	   margin:              auto;
+	   text-align: 			center;
+    }
+	#projectsUrl	{
+		margin-left: 		-18px;
+	}
+	#redirectUrl	{
+		margin-left: 		-20px;
+	}
 }

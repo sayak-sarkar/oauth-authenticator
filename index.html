@@ -26,8 +26,8 @@
     <div id="formsContainer">
       <div id="stage1" class="unhidden">
         <form name="getAuthCode" id="getAuthCode" action="http://join.agiliq.com/oauth/app_authorize/">
-          <label>Redirect URI:</label> <input type="text" name="redirect_uri" /><br/>
-          <label>Client ID:</label> <input type="text" name="client_id" /><br/><br/>
+          <span id="redirectUrl"><label>Redirect URI:</label> <input type="text" name="redirect_uri" /></span><br/>
+          <span id="clientID"><label>Client ID:</label> <input type="text" name="client_id" /></span><br/><br/>
           <input type="submit" class="submitButton" value="Get Authorization Code"><br/>
         </form>
       </div>
